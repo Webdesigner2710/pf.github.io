@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>My Portfolio!</title>
+	
+	<link rel="stylesheet" type="text/css" href="C:\Users\USER\Downloads\fontawesome-free-5.13.0-web\fontawesome-free-5.13.0-web\css\all.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style>
+   	* {
+   		box-sizing: border-box;
+   	}
+   	body {
+  		font-family: Arial;
+  		padding: 10px;
+  		background: #f1f1f1;
+}
+h3{
+	text-align: center;
+	font-size: 200%;
+}
+header{
+	background-image: url("C:/Users/USER/Desktop/portfolio/doodle.jpg");
+	padding: 25px;
+	background-size: cover;
+	text-align: center;
+	text-shadow: 2px 2px 4px black;
+}
+.topnav{
+	background-color: #333;
+	overflow: hidden;
+}
+.topnav a{
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 15px 15px;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+.topnav a:hover{
+	background-color: grey;
+	color: black;
+}
+h2{
+	
+	color: #483D8B;
+	font-family: Courier;
+}
+.leftcolumn{
+	float: left;
+	width: 20%;
+}
+.image{
+
+	width: 30%;
+	padding: 20px;
+}
+.iii{
+	background-color: purple;
+	width: 230%;
+}
+.rightcolumn{
+	float: left;
+}
+.mySlides {display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;}
+
+#w3-btn { display: block; justify-content: center; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </style>
+
+</head>
+<body>
+	<header>
+		<h1>Welcome!</h1>
+		<h3>This is my Website</h3>
+	</header>
+	<div class="topnav">
+		<a href="p.html">Home</a>
+		<a href="p.html">Hasdfg</a>
+		<a href="p.html">isadfd</a>
+		<a href="p.html" style="float: right">jSAD</a>
+
+	</div>
+
+	<div class="row">
+		<div class="leftcolumn">
+
+			<div class="card">
+				<h2>hi</h2>
+				<p>Welcome to Aditya's Personal Portfolio</p>
+				<p>I have created this website/	blog to express myself to the world. This is also my first front-end project.</p>
+				
+				<img src="C:\Users\USER\Downloads\welcome.jpg" alt="welcome" class="iii">
+			</div>
+		</div>
+		<div class="rightcolumn">
+			<div class="card">
+				<h2>Hi!</h2>
+				<img src="C:\Users\USER\Downloads\PicsArt_11-06-12.15.30.jpg" alt="Profile Picture" class="image">
+				<div class="overlay">
+				<div class="text">Hello Everyone!</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>  
+    <!-- If you don't have the files saved locally, make sure to link it in CodePen, just like you linked the CSS. -->
+    <div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="C:\Users\USER\Downloads\beach.jpg" alt="beach" style="width:70%">
+  <img class="mySlides" src="C:\Users\USER\Downloads\mumbai.jpeg" alt="mumbai" style="width:70%">
+  <img class="mySlides" src="C:\Users\USER\Downloads\sydney.jpg" alt="sydney" style="width:70%">
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-btn" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-btn" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="w3-btn demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-btn demo" onclick="currentDiv(2)">2</button> 
+  <button class="w3-btn demo" onclick="currentDiv(3)">3</button> 
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+
+	
+
+</body>
+</html>
